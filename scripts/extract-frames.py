@@ -28,7 +28,7 @@ def main():
         "source",
         nargs="?",
         type=Path,
-        default=ROOT / "video/Create_an_elegant_modern_back.mp4",
+        default=ROOT / "video/v3__fro_embedded_enginner_for_his.mp4",
     )
     parser.add_argument("--output", type=Path, default=ROOT / "public/frames")
     parser.add_argument("--fps", type=int, default=12)

@@ -4,7 +4,7 @@
   width: 100%;
   height: 100dvh;
   object-fit: cover;
-  object-position: 68% center;
+  object-position: center;
   z-index: 0;
   pointer-events: none;
   user-select: none;
@@ -16,8 +16,8 @@
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(95deg, rgba(8, 10, 12, 0.78) 0%, rgba(8, 10, 12, 0.42) 38%, rgba(8, 10, 12, 0.18) 100%),
-    linear-gradient(180deg, rgba(8, 10, 12, 0.18) 0%, rgba(8, 10, 12, 0.58) 100%);
+    linear-gradient(95deg, rgba(4, 8, 14, 0.62) 0%, rgba(4, 8, 14, 0.22) 40%, rgba(4, 8, 14, 0.06) 100%),
+    linear-gradient(180deg, rgba(4, 8, 14, 0.08) 0%, rgba(4, 8, 14, 0.42) 100%);
 }
 
 .site-header,
@@ -212,6 +212,10 @@ main,
 
 .snapshot-card {
   padding: 22px;
+  background: rgba(10, 12, 14, 0.18);
+  backdrop-filter: blur(6px);
+  box-shadow: none;
+  border-color: rgba(244, 239, 230, 0.1);
 }
 
 .snapshot-card h2 {
