@@ -1,0 +1,771 @@
+{
+  "schemaVersion": "1.0.0",
+  "metadata": {
+    "title": "Chenna Kesava Reddy Yenugu - Resume Data Sheet",
+    "createdDate": "2026-09-16",
+    "language": "en",
+    "assetDirectory": "assets/hi",
+    "preferredProfileSourceId": "source-1",
+    "preferredProfileSourceReason": "This resume has the latest PDF metadata date and includes the Suprajit role beginning in May 2026. Metadata dates are not verified publication dates.",
+    "projectContext": {
+      "packageName": "k7p",
+      "framework": "React",
+      "buildTool": "Vite",
+      "currentState": "Starter application with no existing resume data model or portfolio implementation.",
+      "evidencePaths": [
+        "package.json",
+        "src/App.jsx",
+        "README.md"
+      ]
+    },
+    "conventions": {
+      "sourcePaths": "Relative to the repository root.",
+      "sourceIds": "References to the sources array. Every supplied PDF contains one page.",
+      "dates": "YYYY-MM for employment dates and integer years for education; exact days are not supplied.",
+      "nullValues": "Not supplied, not established, or unresolved; see dataQuality for known conflicts.",
+      "status": "Present and ongoing describe the source document, not independently verified current status.",
+      "skills": "Only the explicit SKILLS sections populate skills. Project technologies are separately extracted from project titles and descriptions.",
+      "normalization": "Whitespace, capitalization, and sentence punctuation are cleaned where appropriate. No proficiency ratings, project dates, performance metrics, or missing URLs are invented.",
+      "mergePolicy": "Use the preferred source for the profile summary and headline; merge distinct projects and complementary details from all three resumes."
+    }
+  },
+  "profile": {
+    "id": "chenna-kesava-reddy-yenugu",
+    "fullName": "Chenna Kesava Reddy Yenugu",
+    "nameAsPrinted": "CHENNA KESAVA REDDY YENUGU",
+    "headline": "Embedded Software Developer",
+    "headlineSourceId": "source-1",
+    "summary": "Embedded Software Developer with hands-on experience in C, Embedded C, and C++, Linux system programming, and embedded software development. Strong understanding of Linux internals, Yocto Project, ARM-based systems, and peripheral driver development, with practical experience working with CAN, UART, SPI, I2C, GPIO, and TCP/IP networking. Currently working in R&D at Suprajit Engineering Limited, contributing to embedded software development and Linux-based embedded systems.",
+    "summarySourceId": "source-1",
+    "location": {
+      "city": "Bangalore",
+      "country": "India",
+      "sourceIds": [
+        "source-1",
+        "source-2",
+        "source-3"
+      ]
+    },
+    "contact": {
+      "email": {
+        "address": "chennakesava0517@gmail.com",
+        "sourceIds": [
+          "source-1",
+          "source-2",
+          "source-3"
+        ]
+      },
+      "phone": {
+        "primary": null,
+        "status": "needs_confirmation",
+        "variants": [
+          {
+            "display": "+91-8074453994",
+            "e164": "+918074453994",
+            "sourceIds": [
+              "source-1"
+            ]
+          },
+          {
+            "display": "+91-8074453995",
+            "e164": "+918074453995",
+            "sourceIds": [
+              "source-2",
+              "source-3"
+            ]
+          }
+        ]
+      },
+      "linkedin": {
+        "url": null,
+        "status": "needs_confirmation",
+        "variants": [
+          {
+            "kind": "printed_text",
+            "valueAsPrinted": "linkedin.com/in/chenna-kesava-b47901228",
+            "url": "https://www.linkedin.com/in/chenna-kesava-b47901228",
+            "sourceIds": [
+              "source-1",
+              "source-2",
+              "source-3"
+            ]
+          },
+          {
+            "kind": "embedded_hyperlink",
+            "url": "https://www.linkedin.com/in/chennakesavab47901228",
+            "originalUrl": "https://www.linkedin.com/in/chennakesavab47901228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "sourceIds": [
+              "source-1",
+              "source-2",
+              "source-3"
+            ]
+          }
+        ]
+      }
+    },
+    "sourceIds": [
+      "source-1",
+      "source-2",
+      "source-3"
+    ]
+  },
+  "education": [
+    {
+      "id": "btech-electrical-electronics",
+      "degree": "Bachelor of Technology",
+      "abbreviation": "B.Tech",
+      "fieldOfStudy": "Electrical and Electronics Engineering",
+      "institution": "JNTUA College of Engineering, Kalikiri",
+      "startYear": 2021,
+      "endYear": 2025,
+      "grade": {
+        "value": 78.2,
+        "unit": "percent"
+      },
+      "sourceIds": [
+        "source-1",
+        "source-2",
+        "source-3"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "programming-languages",
+      "category": "Programming Languages",
+      "items": [
+        {
+          "name": "C",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "Embedded C",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "C++",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "embedded-systems",
+      "category": "Embedded Systems and Hardware",
+      "items": [
+        {
+          "name": "ARM7 Microcontroller",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-3"
+          ]
+        },
+        {
+          "name": "LPC2129",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "Peripheral Driver Development",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-3"
+          ]
+        },
+        {
+          "name": "Firmware Development",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "networking-communication",
+      "category": "Networking and Communication",
+      "items": [
+        {
+          "name": "CAN",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "UART",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "SPI",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "I2C",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "GPIO",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-3"
+          ]
+        },
+        {
+          "name": "TCP/IP",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "UDP",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "Raw Sockets",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "Socket Programming",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operating-systems",
+      "category": "Operating Systems",
+      "items": [
+        {
+          "name": "Linux Internals",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "Linux System Programming",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-2",
+            "source-3"
+          ]
+        },
+        {
+          "name": "FreeRTOS",
+          "proficiency": "Basic Knowledge",
+          "sourceIds": [
+            "source-1",
+            "source-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "debugging",
+      "category": "Debugging Tools",
+      "items": [
+        {
+          "name": "GDB",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-3"
+          ]
+        },
+        {
+          "name": "Embedded System Debugging",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1",
+            "source-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linux-framework",
+      "category": "Linux Framework",
+      "items": [
+        {
+          "name": "Yocto Project",
+          "proficiency": null,
+          "sourceIds": [
+            "source-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "id": "suprajit-embedded-software-developer",
+      "organization": "Suprajit Engineering Limited",
+      "role": "Embedded Software Developer",
+      "department": "R&D",
+      "type": "employment",
+      "location": null,
+      "startDate": "2026-05",
+      "endDate": null,
+      "endDateAsReported": "present",
+      "isCurrentAsReported": true,
+      "statusSourceId": "source-1",
+      "highlights": [
+        "Contributing to embedded software development and Linux-based embedded systems."
+      ],
+      "highlightsSourceSection": "SUMMARY",
+      "sourceIds": [
+        "source-1"
+      ]
+    },
+    {
+      "id": "vector-embedded-systems-trainee",
+      "organization": "Vector India Pvt. Ltd.",
+      "role": "Embedded Systems Trainee",
+      "department": null,
+      "type": "training",
+      "location": {
+        "city": "Bangalore"
+      },
+      "startDate": "2025-06",
+      "endDate": "2026-01",
+      "endDateAsReported": "01/2026",
+      "isCurrentAsReported": false,
+      "trainingFocus": "Automotive ECU Communication using CAN protocol - Hands-on Training",
+      "reportedTrainingDuration": {
+        "value": 8,
+        "unit": "months",
+        "sourceIds": [
+          "source-2"
+        ]
+      },
+      "highlights": [
+        "Developed and validated automotive ECU-to-ECU communication logic for vehicle control functions.",
+        "Implemented CAN message flow between ECUs for automotive indicators such as headlights and turn signals.",
+        "Designed control logic and validated system behavior under multiple test scenarios.",
+        "Executed debugging, integration testing, and functional verification in a real-time environment."
+      ],
+      "highlightsSourceIds": [
+        "source-2",
+        "source-3"
+      ],
+      "sourceIds": [
+        "source-1",
+        "source-2",
+        "source-3"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "rfid-employee-attendance",
+      "title": "Automated Employee Attendance System using RFID Technology",
+      "technologies": [
+        "Embedded C",
+        "LPC2129",
+        "ARM7",
+        "RFID",
+        "UART",
+        "SPI"
+      ],
+      "highlights": [
+        "Designed and developed an RFID-based real-time attendance system using an LPC2129 ARM7 microcontroller to automate employee entry and exit tracking.",
+        "Used UART and SPI communication protocols to interface an RFID reader, ensuring reliable tag detection and data acquisition.",
+        "Developed Embedded C firmware for unique ID verification, attendance logging, and system control with optimized memory usage."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-1",
+        "source-3"
+      ]
+    },
+    {
+      "id": "bus-reservation",
+      "title": "Bus Reservation System",
+      "technologies": [
+        "C",
+        "Data Structures",
+        "SMTP",
+        "File Handling"
+      ],
+      "highlights": [
+        "Developed a console-based bus reservation system using C programming.",
+        "Added automated email alerts for seat booking, cancellation, and availability updates.",
+        "Applied data structures for efficient record management.",
+        "Used file handling to store and retrieve booking data."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-1",
+        "source-2"
+      ],
+      "detailSourceNotes": [
+        {
+          "detail": "File handling to store and retrieve booking data.",
+          "sourceIds": [
+            "source-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multi-client-chat",
+      "title": "Multi-Client Chat Application (Linux IPC)",
+      "technologies": [
+        "C",
+        "Linux",
+        "IPC",
+        "Message Queues"
+      ],
+      "highlights": [
+        "Constructed a server and multi-client chat application using message queues.",
+        "Implemented IPC mechanisms in Linux using C programming.",
+        "Tested communication across multiple terminals in a Linux environment."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-1",
+        "source-2"
+      ]
+    },
+    {
+      "id": "vehicle-parameter-monitoring",
+      "title": "Smart Vehicle Parameter Monitoring System using High-Speed SPI and I2C Communication",
+      "technologies": [
+        "SPI",
+        "I2C",
+        "Embedded Microcontroller",
+        "Sensors"
+      ],
+      "highlights": [
+        "Implemented a real-time vehicle parameter monitoring system by interfacing multiple sensors using high-speed SPI and I2C protocols on an embedded microcontroller.",
+        "Developed efficient data acquisition and processing algorithms to monitor vehicle metrics."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-1",
+        "source-3"
+      ],
+      "detailSourceNotes": [
+        {
+          "detail": "The fuller SPI/I2C implementation description and data acquisition algorithms are from source-3.",
+          "sourceIds": [
+            "source-3"
+          ]
+        },
+        {
+          "detail": "The unclear phrase \"with impact accuracy\" was omitted from the cleaned highlight; no accuracy improvement or metric is inferred.",
+          "originalText": "Developed efficient data acquisition and processing algorithms to monitor vehicle metrics with impact accuracy",
+          "sourceIds": [
+            "source-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ultrasonic-parking-collision-avoidance",
+      "title": "Intelligent Ultrasonic-Based Reverse Parking and Collision Avoidance System using CAN Protocol",
+      "technologies": [
+        "Embedded C",
+        "CAN",
+        "Ultrasonic Sensors"
+      ],
+      "highlights": [
+        "Designed a real-time automotive safety system using ultrasonic sensors for obstacle distance detection.",
+        "Developed a collision prevention and reverse parking guidance system using ultrasonic sensors.",
+        "Implemented Embedded C algorithms for proximity detection and adaptive alerts, enabling reliable reverse parking."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-3"
+      ],
+      "microcontroller": {
+        "name": null,
+        "nameAsPrinted": "Ipc2129",
+        "status": "needs_confirmation",
+        "sourceIds": [
+          "source-3"
+        ]
+      }
+    },
+    {
+      "id": "bluetooth-home-automation",
+      "title": "Home Automation using Bluetooth (Arduino)",
+      "technologies": [
+        "Arduino",
+        "Bluetooth",
+        "Relay Interfacing"
+      ],
+      "highlights": [
+        "Developed a Bluetooth-based home automation system using Arduino to remotely control household appliances through a mobile application.",
+        "Implemented wireless communication and relay interfacing for real-time device switching."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-3"
+      ]
+    },
+    {
+      "id": "online-exam",
+      "title": "Online Exam System (C++)",
+      "technologies": [
+        "C++",
+        "Object-Oriented Programming",
+        "File Handling"
+      ],
+      "highlights": [
+        "Structured an exam system using object-oriented programming concepts and file handling.",
+        "Implemented authentication for admin and user modules.",
+        "Added timer-based exam functionality."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": {
+        "value": "ongoing",
+        "sourceId": "source-2",
+        "sourceMetadataDate": "2026-02-01",
+        "currentStatusConfirmed": false
+      },
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-2"
+      ]
+    },
+    {
+      "id": "load-frequency-control",
+      "title": "Load Frequency Control Optimization",
+      "technologies": [
+        "MATLAB Simulink",
+        "PID",
+        "Fuzzy Logic",
+        "ANFIS"
+      ],
+      "highlights": [
+        "Built and simulated a two-area interconnected power system.",
+        "Implemented PID, Fuzzy Logic, and ANFIS controllers.",
+        "Analyzed system stability and frequency deviation using MATLAB Simulink.",
+        "Compared controller performance based on response characteristics."
+      ],
+      "startDate": null,
+      "endDate": null,
+      "reportedStatus": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "sourceIds": [
+        "source-2"
+      ],
+      "type": "academic"
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-1",
+      "path": "assets/hi/Chenna_Kesava_Reddy_Resume _ (2).pdf",
+      "fileName": "Chenna_Kesava_Reddy_Resume _ (2).pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 1,
+      "sizeBytes": 107521,
+      "sha256": "d11c55a0a418ed933f77bf18c88ab14e9e535b61ff091299d89f3230577e863f",
+      "pdfMetadataCreatedDate": "2026-08-10",
+      "pdfMetadataModifiedDate": "2026-08-10",
+      "headline": "Embedded Software Developer",
+      "summaryAsExtracted": "Embedded Software Developer with hands-on experience in C, Embedded C, and C++, Linux system programming, and embedded software development. Strong understanding of Linux internals, Yocto Project, ARM-based systems, and peripheral driver development, with practical experience working with CAN, UART, SPI, I2C, GPIO, and TCP/IP networking.Currently working in R&D at Suprajit Engineering Limited, contributing to embedded software development and Linux-based embedded systems",
+      "embeddedLinks": [
+        "mailto:chennakesava0517@gmail.com",
+        "https://www.linkedin.com/in/chennakesavab47901228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      ]
+    },
+    {
+      "id": "source-2",
+      "path": "assets/hi/Chenna_Kesava_Reddy_Resume-2 (2).pdf",
+      "fileName": "Chenna_Kesava_Reddy_Resume-2 (2).pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 1,
+      "sizeBytes": 156795,
+      "sha256": "43ba72b8e7219ede1314c7822e589347c9dda20d3188580f055ec07c196fcd64",
+      "pdfMetadataCreatedDate": "2026-02-01",
+      "pdfMetadataModifiedDate": "2026-02-01",
+      "headline": "Embedded Systems Engineer - Trainee",
+      "summaryAsExtracted": "Embedded Systems fresher with hands-on experience in Embedded C, ARM microcontrollers, CAN protocol, Linux internals, and automotive ECU communication. Completed 8-month advanced embedded systems training with strong foundation in real-time embedded system validation and automotive ECU development.",
+      "embeddedLinks": [
+        "mailto:chennakesava0517@gmail.com",
+        "https://www.linkedin.com/in/chennakesavab47901228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      ]
+    },
+    {
+      "id": "source-3",
+      "path": "assets/hi/DOC-20260320-WA0003..pdf",
+      "fileName": "DOC-20260320-WA0003..pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 1,
+      "sizeBytes": 156361,
+      "sha256": "4d1dd8fc52e9f0faa65e70788c973d5fc9dba437684bb8a1529eb0b4f58f0185",
+      "pdfMetadataCreatedDate": "2026-03-13",
+      "pdfMetadataModifiedDate": "2026-03-13",
+      "headline": "Embedded Systems Engineer - Trainee",
+      "summaryAsExtracted": "Embedded Systems Engineer with hands-on experience in Embedded C programming, ARM microcontrollers through advanced training and projects. Skilled in Firmware Development, peripheral driver implementation, and communication protocols including CAN, SPI, UART, and I2C.Strong foundation in automotive ECU Communication, Embedded debugging, and real-time embedded systems development.",
+      "embeddedLinks": [
+        "mailto:chennakesava0517@gmail.com",
+        "https://www.linkedin.com/in/chennakesavab47901228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      ]
+    }
+  ],
+  "dataQuality": {
+    "extractionMethod": "PDF text extraction, embedded hyperlink inspection, and visual review of all three pages.",
+    "externalVerificationPerformed": false,
+    "issues": [
+      {
+        "id": "conflicting-phone-numbers",
+        "type": "conflict",
+        "status": "needs_confirmation",
+        "field": "/profile/contact/phone",
+        "description": "Source-1 lists +91-8074453994; sources-2 and source-3 list +91-8074453995. Both values are retained and primary is null.",
+        "sourceIds": [
+          "source-1",
+          "source-2",
+          "source-3"
+        ]
+      },
+      {
+        "id": "linkedin-text-link-mismatch",
+        "type": "conflict",
+        "status": "needs_confirmation",
+        "field": "/profile/contact/linkedin",
+        "description": "In every PDF, the printed LinkedIn path is /in/chenna-kesava-b47901228 while the embedded hyperlink points to /in/chennakesavab47901228. Both are retained and the primary URL is null. Only tracking query parameters were removed from the normalized embedded URL.",
+        "sourceIds": [
+          "source-1",
+          "source-2",
+          "source-3"
+        ]
+      },
+      {
+        "id": "ambiguous-parking-microcontroller",
+        "type": "ambiguous_source_text",
+        "status": "needs_confirmation",
+        "field": "/projects/4/microcontroller",
+        "description": "The parking project literally identifies the MCU as Ipc2129. LPC2129 appears elsewhere in the resumes, but that correction is not assumed for this project.",
+        "sourceIds": [
+          "source-3"
+        ]
+      },
+      {
+        "id": "unclear-monitoring-accuracy-phrase",
+        "type": "ambiguous_source_text",
+        "status": "preserved_in_source_note",
+        "field": "/projects/3/detailSourceNotes",
+        "description": "The source phrase \"with impact accuracy\" is unclear. The cleaned highlight retains the supported data acquisition and processing work; the original wording is preserved in the project note.",
+        "sourceIds": [
+          "source-3"
+        ]
+      },
+      {
+        "id": "historical-status-claims",
+        "type": "temporal_qualification",
+        "status": "source_qualified",
+        "fields": [
+          "/profile/summary",
+          "/experience/0/isCurrentAsReported",
+          "/projects/6/reportedStatus"
+        ],
+        "description": "The Suprajit present/current wording comes from source-1, and the online exam ongoing wording comes from source-2. These statuses are preserved as reported, not verified as of the data sheet creation date.",
+        "sourceIds": [
+          "source-1",
+          "source-2"
+        ]
+      }
+    ],
+    "notProvided": [
+      "Profile photograph",
+      "GitHub profile URL",
+      "Project repository and demo URLs",
+      "Project start and end dates",
+      "Suprajit work location",
+      "Certifications",
+      "Spoken languages"
+    ]
+  }
+}
