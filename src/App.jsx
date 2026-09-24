@@ -1,13 +1,12 @@
 import { useEffect } from 'react'
 import BackgroundFrames from './components/BackgroundFrames'
+import ProjectGrid from './components/ProjectGrid'
 import {
   capabilities,
   education,
   experience,
   nav,
   profile,
-  projectContent,
-  projectOrder,
   snapshot,
 } from './data/portfolio-content'
 import './App.css'
@@ -121,27 +120,7 @@ function App() {
             </p>
           </header>
 
-          <div className="project-grid">
-            {projectOrder.map((id, index) => {
-              const project = projectContent[id]
-              return (
-                <article key={id} className={index === 0 ? 'project-card project-card--feature' : 'project-card'}>
-                  <p className="project-index">{String(index + 1).padStart(2, '0')}</p>
-                  <p className="project-kicker">
-                    {project.category} · {project.eyebrow}
-                  </p>
-                  <h3>{project.shortTitle}</h3>
-                  <p className="project-copy">{index === 0 ? project.detail : project.description}</p>
-                  <p className="project-focus">{project.focus}</p>
-                  <ul className="chip-row">
-                    {project.technologies.map((tech) => (
-                      <li key={tech}>{tech}</li>
-                    ))}
-                  </ul>
-                </article>
-              )
-            })}
-          </div>
+          <ProjectGrid />
         </section>
 
         <section id="capabilities" className="section">

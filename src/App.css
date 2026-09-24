@@ -303,10 +303,80 @@ main {
   grid-column: 1 / -1;
 }
 
-.project-card,
+.project-card--text,
 .capability-card,
 .education-card {
   padding: 26px;
+}
+
+.project-card--video {
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-media {
+  position: relative;
+  background: #07080a;
+}
+
+.project-card--landscape .project-media {
+  aspect-ratio: 16 / 9;
+}
+
+.project-card--portrait .project-media {
+  aspect-ratio: 9 / 16;
+  max-height: 72vh;
+}
+
+.project-media video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  background: #07080a;
+  cursor: pointer;
+}
+
+.project-controls {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-pause,
+.project-sound {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid rgba(244, 239, 230, 0.28);
+  border-radius: 999px;
+  background: rgba(8, 10, 12, 0.72);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.project-sound {
+  color: var(--copper);
+  border-color: var(--copper-line);
+}
+
+.project-pause:hover,
+.project-sound:hover {
+  background: rgba(8, 10, 12, 0.9);
+}
+
+.project-card--video .project-body {
+  padding: 22px 26px 26px;
 }
 
 .project-index {
@@ -384,12 +454,91 @@ main {
   }
 
   .snapshot,
-  .project-grid,
   .capability-grid,
   .timeline-item,
   .site-footer {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  #work .project-grid {
+    display: block;
+    height: calc(100dvh - var(--header-height));
+    margin-inline: -18px;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    overscroll-behavior-y: auto;
+    scrollbar-width: none;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: #07080a;
+  }
+
+  #work .project-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-card {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    overflow: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    border: 0;
+    border-radius: 0;
+    background: #0c0e10;
+  }
+
+  .project-card + .project-card {
+    border-top: 1px solid var(--line);
+  }
+
+  .project-card--feature {
+    grid-column: auto;
+  }
+
+  .project-media,
+  .project-card--landscape .project-media,
+  .project-card--portrait .project-media {
+    position: absolute;
+    inset: 0;
+    aspect-ratio: auto;
+    max-height: none;
+  }
+
+  .project-controls {
+    top: 18px;
+    right: 14px;
+    bottom: auto;
+  }
+
+  .project-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 88px 18px 28px;
+    background: linear-gradient(180deg, rgba(7, 8, 10, 0) 0%, rgba(7, 8, 10, 0.78) 42%, rgba(7, 8, 10, 0.94) 100%);
+  }
+
+  .project-card--text .project-body {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background:
+      linear-gradient(180deg, rgba(12, 14, 16, 0.2) 0%, rgba(12, 14, 16, 0.55) 46%, rgba(12, 14, 16, 0.94) 100%),
+      var(--panel);
+  }
+
+  .project-card--video .project-copy {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .hero h1 {

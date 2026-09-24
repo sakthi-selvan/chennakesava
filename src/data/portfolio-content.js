@@ -90,6 +90,8 @@ export const projectContent = {
       'Designed and developed an RFID attendance system on the LPC2129 ARM7 microcontroller. Interfaced the reader over UART and SPI, then wrote Embedded C firmware for unique ID verification, attendance logging, and system control, with attention to memory use.',
     focus: 'Device firmware and peripheral integration',
     technologies: ['Embedded C', 'LPC2129', 'ARM7', 'RFID', 'UART', 'SPI'],
+    video: '/work/rfid-arm-uart-spi.mp4',
+    videoFrame: 'landscape',
   },
   'ultrasonic-parking-collision-avoidance': {
     shortTitle: 'Ultrasonic parking assistance',
@@ -101,6 +103,8 @@ export const projectContent = {
       'Designed a real-time automotive safety project using ultrasonic sensors for obstacle distance detection. Developed Embedded C algorithms for proximity detection and adaptive alerts, supporting reverse-parking guidance and collision-prevention logic on the CAN bus.',
     focus: 'Proximity sensing and in-vehicle messaging',
     technologies: ['Embedded C', 'CAN', 'Ultrasonic sensors'],
+    video: '/work/ultrasonic-parking.mp4',
+    videoFrame: 'portrait',
   },
   'vehicle-parameter-monitoring': {
     shortTitle: 'Vehicle parameter monitoring',
@@ -112,6 +116,8 @@ export const projectContent = {
       'Implemented a real-time vehicle-parameter monitoring system by interfacing multiple sensors through SPI and I2C. Developed data-acquisition and processing algorithms so the microcontroller could track vehicle metrics as they arrived.',
     focus: 'Sensor acquisition and processing',
     technologies: ['SPI', 'I2C', 'Embedded microcontroller', 'Sensors'],
+    video: '/work/vehicle-parameter-monitoring.mp4',
+    videoFrame: 'portrait',
   },
   'multi-client-chat': {
     shortTitle: 'Linux multi-client chat',
