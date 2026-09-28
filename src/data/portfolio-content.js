@@ -73,10 +73,7 @@ export const projectOrder = [
   'ultrasonic-parking-collision-avoidance',
   'vehicle-parameter-monitoring',
   'multi-client-chat',
-  'bluetooth-home-automation',
   'bus-reservation',
-  'online-exam',
-  'load-frequency-control',
 ]
 
 export const projectContent = {
@@ -130,17 +127,6 @@ export const projectContent = {
     focus: 'Linux IPC',
     technologies: ['C', 'Linux', 'IPC', 'Message queues'],
   },
-  'bluetooth-home-automation': {
-    shortTitle: 'Bluetooth home automation',
-    category: 'Embedded systems',
-    eyebrow: 'ARDUINO · RELAYS',
-    description:
-      'An Arduino project that switches household appliances from a mobile application over Bluetooth.',
-    detail:
-      'Developed a Bluetooth home-automation system on Arduino so household appliances could be controlled from a mobile application. Implemented wireless communication and relay interfacing for real-time device switching.',
-    focus: 'Wireless control and actuation',
-    technologies: ['Arduino', 'Bluetooth', 'Relay interfacing'],
-  },
   'bus-reservation': {
     shortTitle: 'Bus reservation system',
     category: 'Systems software',
@@ -151,28 +137,6 @@ export const projectContent = {
       'Developed a C application for bus reservations, using data structures to manage records and file handling to store and retrieve bookings. Automated email alerts for booking, cancellation, and availability through SMTP.',
     focus: 'Records and application logic',
     technologies: ['C', 'Data structures', 'SMTP', 'File handling'],
-  },
-  'online-exam': {
-    shortTitle: 'Timed examination system',
-    category: 'Systems software',
-    eyebrow: 'C++ · OOP',
-    description:
-      'A C++ examination application with separate admin and user authentication and a timed exam flow.',
-    detail:
-      'Structured an examination system in C++ using object-oriented design and file handling. Implemented authentication for admin and user modules, and added timer-based exam functionality.',
-    focus: 'Authentication and timed workflows',
-    technologies: ['C++', 'Object-oriented programming', 'File handling'],
-  },
-  'load-frequency-control': {
-    shortTitle: 'Load frequency control',
-    category: 'Academic',
-    eyebrow: 'MATLAB SIMULINK',
-    description:
-      'A two-area power-system study comparing PID, Fuzzy Logic, and ANFIS controllers on frequency deviation and stability.',
-    detail:
-      'Built and simulated a two-area interconnected power system in MATLAB Simulink. Implemented PID, Fuzzy Logic, and ANFIS controllers, then compared stability, frequency deviation, and response characteristics.',
-    focus: 'Simulation and controller comparison',
-    technologies: ['MATLAB Simulink', 'PID', 'Fuzzy Logic', 'ANFIS'],
   },
 }
 
