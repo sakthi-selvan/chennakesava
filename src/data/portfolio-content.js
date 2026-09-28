@@ -126,6 +126,8 @@ export const projectContent = {
       'Built a server and multi-client chat application using Linux interprocess communication in C. Message queues carried traffic between processes, and the design was tested across multiple terminals.',
     focus: 'Linux IPC',
     technologies: ['C', 'Linux', 'IPC', 'Message queues'],
+    video: '/work/multichat.mp4',
+    videoFrame: 'portrait',
   },
   'bus-reservation': {
     shortTitle: 'Bus reservation system',
@@ -137,6 +139,8 @@ export const projectContent = {
       'Developed a C application for bus reservations, using data structures to manage records and file handling to store and retrieve bookings. Automated email alerts for booking, cancellation, and availability through SMTP.',
     focus: 'Records and application logic',
     technologies: ['C', 'Data structures', 'SMTP', 'File handling'],
+    video: '/work/bookingbus.mp4',
+    videoFrame: 'portrait',
   },
 }
 
