@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { projectContent, projectOrder } from '../data/portfolio-content'
 
-const ACTIVATION_RATIO = 0.45
+const MIN_VISIBLE_RATIO = 0.18
 
 function ControlIcon({ paused }) {
   if (paused) {
@@ -44,12 +44,21 @@ export default function ProjectGrid() {
         return
       }
 
+      const viewportCenter = window.innerHeight / 2
       let bestId = null
-      let bestRatio = ACTIVATION_RATIO
+      let bestScore = Number.POSITIVE_INFINITY
+
       cards.forEach((card) => {
         const ratio = ratios.get(card.dataset.projectId) || 0
-        if (ratio > bestRatio) {
-          bestRatio = ratio
+        if (ratio < MIN_VISIBLE_RATIO) return
+
+        const bounds = card.getBoundingClientRect()
+        const cardCenter = bounds.top + bounds.height / 2
+        const centerDistance = Math.abs(cardCenter - viewportCenter)
+        const score = centerDistance / Math.max(ratio, 0.01)
+
+        if (score < bestScore) {
+          bestScore = score
           bestId = card.dataset.projectId
         }
       })
@@ -63,7 +72,7 @@ export default function ProjectGrid() {
         })
         chooseActive()
       },
-      { threshold: [0, 0.25, 0.45, 0.7, 1] },
+      { threshold: [0, MIN_VISIBLE_RATIO, 0.35, 0.5, 0.7, 1] },
     )
 
     cards.forEach((card) => observer.observe(card))
@@ -204,11 +213,6 @@ export default function ProjectGrid() {
       video.play().catch(() => {})
     })
 
-    if (id !== activeId) {
-      gridRef.current
-        ?.querySelector(`[data-project-id="${id}"]`)
-        ?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
-    }
   }
 
   const enableSound = (id) => {

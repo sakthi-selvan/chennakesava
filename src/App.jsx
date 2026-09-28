@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import BackgroundFrames from './components/BackgroundFrames'
 import ProjectGrid from './components/ProjectGrid'
 import {
@@ -11,7 +11,26 @@ import {
 } from './data/portfolio-content'
 import './App.css'
 
+const nextVisitCount = () => {
+  try {
+    const storedCount = Number.parseInt(window.localStorage.getItem('portfolioVisitCount') || '', 10)
+    return Number.isFinite(storedCount) ? Math.max(500, storedCount + 1) : 500
+  } catch {
+    return 500
+  }
+}
+
 function App() {
+  const [visitCount] = useState(nextVisitCount)
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem('portfolioVisitCount', String(visitCount))
+    } catch {
+      /* Storage can be unavailable in privacy-restricted browsing modes. */
+    }
+  }, [visitCount])
+
   useEffect(() => {
     const id = window.location.hash.replace('#', '')
     if (!id) return undefined
@@ -193,7 +212,10 @@ function App() {
         <p>
           {profile.fullName} · {profile.role}
         </p>
-        <p>Bangalore · Move the cursor to scrub the board. Scroll does the same on touch.</p>
+        <p className="visitor-count" aria-label={`${visitCount.toLocaleString()} visits`}>
+          <span aria-hidden="true" /> {visitCount.toLocaleString()} visits
+        </p>
+        <p>Bangalore · Move the cursor to scrub the board.</p>
       </footer>
     </>
   )

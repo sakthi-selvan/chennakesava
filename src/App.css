@@ -432,11 +432,28 @@ main {
 .site-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   padding: 28px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.visitor-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  color: var(--ink);
+}
+
+.visitor-count span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--copper);
+  box-shadow: 0 0 14px rgba(212, 165, 116, 0.72);
 }
 
 @media (max-width: 900px) {
@@ -462,37 +479,13 @@ main {
   }
 
   #work .project-grid {
-    display: block;
-    height: calc(100dvh - var(--header-height));
-    margin-inline: -18px;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    overscroll-behavior-y: auto;
-    scrollbar-width: none;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    background: #07080a;
-  }
-
-  #work .project-grid::-webkit-scrollbar {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .project-card {
     position: relative;
-    height: 100%;
-    min-height: 100%;
-    padding: 0;
     overflow: hidden;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    border: 0;
-    border-radius: 0;
-    background: #0c0e10;
-  }
-
-  .project-card + .project-card {
-    border-top: 1px solid var(--line);
   }
 
   .project-card--feature {
@@ -502,10 +495,9 @@ main {
   .project-media,
   .project-card--landscape .project-media,
   .project-card--portrait .project-media {
-    position: absolute;
-    inset: 0;
-    aspect-ratio: auto;
-    max-height: none;
+    position: relative;
+    aspect-ratio: 4 / 5;
+    max-height: 78dvh;
   }
 
   .project-controls {
@@ -515,23 +507,7 @@ main {
   }
 
   .project-body {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    padding: 88px 18px 28px;
-    background: linear-gradient(180deg, rgba(7, 8, 10, 0) 0%, rgba(7, 8, 10, 0.78) 42%, rgba(7, 8, 10, 0.94) 100%);
-  }
-
-  .project-card--text .project-body {
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background:
-      linear-gradient(180deg, rgba(12, 14, 16, 0.2) 0%, rgba(12, 14, 16, 0.55) 46%, rgba(12, 14, 16, 0.94) 100%),
-      var(--panel);
+    position: relative;
   }
 
   .project-card--video .project-copy {

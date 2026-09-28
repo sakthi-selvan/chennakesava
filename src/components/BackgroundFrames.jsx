@@ -43,20 +43,11 @@ export default function BackgroundFrames() {
       requestFrame(clampFrame(progress))
     }
 
-    const onScroll = () => {
-      if (reducedMotion.matches) return
-      const max = document.documentElement.scrollHeight - window.innerHeight
-      if (max <= 0) return
-      requestFrame(clampFrame(window.scrollY / max))
-    }
-
     window.addEventListener('pointermove', onPointerMove, { passive: true })
-    window.addEventListener('scroll', onScroll, { passive: true })
 
     return () => {
       window.cancelAnimationFrame(raf)
       window.removeEventListener('pointermove', onPointerMove)
-      window.removeEventListener('scroll', onScroll)
     }
   }, [])
 
